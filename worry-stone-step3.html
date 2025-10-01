@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Ceramic Worry Stones - Positive Emotional Support</title>
+    <title>Ceramic Thumb Worry Stone - 4pcs Positive Cat Stone Gift Box</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
@@ -45,8 +45,8 @@
             margin: 0.5rem;
         }
         .product-showcase {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
             border-radius: 20px;
             padding: 3rem;
             margin: 2rem 0;
@@ -59,25 +59,40 @@
             align-items: center;
             margin: 2rem 0;
         }
-        .product-image-placeholder {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            padding: 3rem;
-            text-align: center;
-            min-height: 300px;
+        .product-images {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .main-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+        .thumbnail {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
         }
         .product-details h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #ffd700;
+            color: #667eea;
         }
         .product-details p {
             font-size: 1.15rem;
             margin-bottom: 1rem;
+            line-height: 1.8;
         }
         .features-list {
             list-style: none;
@@ -89,90 +104,35 @@
             display: flex;
             align-items: start;
             gap: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
         .features-list li:before {
-            content: "✓";
-            color: #ffd700;
+            content: "😊";
             font-size: 1.5rem;
-            font-weight: bold;
             flex-shrink: 0;
         }
         .price-section {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 237, 78, 0.3) 100%);
-            border: 2px solid #ffd700;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
             border-radius: 15px;
             padding: 2rem;
             margin: 2rem 0;
             text-align: center;
+            color: #333;
+        }
+        .price-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
         .price {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            color: #ffd700;
-            margin: 1rem 0;
-        }
-        .price-subtext {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .testimonials {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2.5rem;
-            margin: 2rem 0;
-        }
-        .testimonials h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .testimonial {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 1.5rem;
-            border-radius: 15px;
-            margin: 1.5rem 0;
-        }
-        .stars {
-            color: #ffd700;
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-        .testimonial-text {
-            font-size: 1.1rem;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        .testimonial-author {
-            font-size: 1rem;
-            opacity: 0.8;
-            text-align: right;
-        }
-        .guarantee-box {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        .guarantee-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #ffd700;
-        }
-        .cta-section {
-            text-align: center;
-            margin: 3rem 0;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            margin: 0.5rem 0;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 1.5rem 4rem;
             border-radius: 50px;
             text-decoration: none;
@@ -187,23 +147,74 @@
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
-        .urgency-text {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            color: #ffd700;
-        }
-        .bonus-section {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        .white-section {
+            background: white;
+            color: #333;
             border-radius: 20px;
             padding: 2.5rem;
             margin: 2rem 0;
         }
-        .bonus-section h2 {
+        .white-section h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
+            color: #667eea;
             text-align: center;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .benefit-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 15px;
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+        .benefit-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .product-description-images {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .desc-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .guarantee-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .guarantee-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        .urgency-text {
+            font-size: 1.2rem;
+            margin-top: 1rem;
             color: #ffd700;
+            font-weight: bold;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -230,17 +241,19 @@
             .product-grid {
                 grid-template-columns: 1fr;
             }
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            .thumbnail-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
             .product-showcase,
-            .testimonials,
-            .bonus-section {
+            .white-section {
                 padding: 1.5rem;
             }
             .cta-button {
                 font-size: 1.2rem;
                 padding: 1.2rem 2.5rem;
-            }
-            .price {
-                font-size: 2.5rem;
             }
         }
     </style>
@@ -248,95 +261,152 @@
 <body>
     <div class="container">
         <header>
-            <h1>Premium Ceramic Worry Stones</h1>
-            <p class="subtitle">Handcrafted for Positive Emotional Support & Daily Calm</p>
+            <h1>Ceramic Thumb Worry Stone</h1>
+            <p class="subtitle">4pcs Positive Cat Stone Gift Box • Emotional Support Fidget Toys</p>
             <div>
-                <span class="trust-badge">⭐ 4.5+ Star Rating</span>
-                <span class="trust-badge">🌍 Trusted Worldwide</span>
-                <span class="trust-badge">💯 Premium Quality</span>
+                <span class="trust-badge">⭐ Premium Quality</span>
+                <span class="trust-badge">🎁 Gift-Ready Packaging</span>
+                <span class="trust-badge">✨ 100% Handmade</span>
             </div>
         </header>
 
         <div class="product-showcase">
             <div class="product-grid">
-                <div class="product-image-placeholder">
-                    🪨<br>
-                    <div style="font-size: 1rem; margin-top: 1rem;">Beautiful Ceramic Worry Stones<br>with Positive Affirmations</div>
+                <div class="product-images">
+                    <img src="https://m.media-amazon.com/images/I/81f0ygFLlnL._AC_SX679_.jpg" alt="Ceramic Worry Stone Gift Set" class="main-image" id="mainImage">
+                    <div class="thumbnail-grid">
+                        <img src="https://m.media-amazon.com/images/I/71ScVitPTeL._AC_SX679_.jpg" alt="Worry Stone Thumbnail 1" class="thumbnail" onclick="changeImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81JDPU9PQ5L._AC_SX679_.jpg" alt="Worry Stone Thumbnail 2" class="thumbnail" onclick="changeImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81wl0rj-ZgL._AC_SX679_.jpg" alt="Worry Stone Thumbnail 3" class="thumbnail" onclick="changeImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71A9AijWHgL._AC_SX679_.jpg" alt="Worry Stone Thumbnail 4" class="thumbnail" onclick="changeImage(this.src)">
+                    </div>
                 </div>
+
                 <div class="product-details">
-                    <h2>What Makes These Special?</h2>
-                    <p>
-                        Unlike ordinary stones, these premium ceramic worry stones are specially designed with positive affirmations to enhance your emotional well-being.
-                    </p>
+                    <h2>Premium Ceramic Worry Stones with Positive Messages</h2>
+                    <p><strong>What You Get:</strong></p>
                     <ul class="features-list">
-                        <li>High-quality ceramic construction with smooth, therapeutic texture</li>
-                        <li>Uplifting positive messages engraved on each stone</li>
-                        <li>Perfect size and shape for comfortable thumb rubbing</li>
-                        <li>Durable and long-lasting—use for years to come</li>
-                        <li>Beautiful designs that double as inspirational décor</li>
-                        <li>Multiple stones with different affirmations</li>
-                        <li>Ideal for gifts—share the gift of calm with loved ones</li>
+                        <li><strong>4 Premium Ceramic Worry Stones</strong> with split ring and keychain feature</li>
+                        <li><strong>Gift-Ready Packaging Box</strong> with a positive inspirational card</li>
+                        <li><strong>Size:</strong> Approximately 1.24" length × 1" width × 0.33" thickness</li>
+                        <li><strong>Design:</strong> Cute mischievous cat characters with positive encouraging words</li>
+                        <li><strong>Material:</strong> High-quality, non-toxic, eco-friendly ceramic</li>
+                        <li><strong>Finish:</strong> Glazed and polished for smooth, shiny surface</li>
                     </ul>
+
+                    <div class="price-section">
+                        <div class="price-label">Available on Amazon</div>
+                        <div class="price">Check Current Price →</div>
+                        <div style="font-size: 1rem; margin-top: 0.5rem;">Fast & Free Shipping Available with Prime</div>
+                    </div>
+
+                    <a href="https://www.amazon.com/TIWIWTB-Ceramic-Positive-Emotional-Support/dp/B0FHVJ7VW1?ref_=ast_sto_dp&th=1"
+                       class="cta-button"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Buy Now on Amazon →
+                    </a>
+                    <p class="urgency-text" style="text-align: center; color: #667eea;">⚡ Limited Stock - Order Today!</p>
                 </div>
             </div>
         </div>
 
-        <div class="bonus-section">
-            <h2>Complete Worry Stone Set Includes:</h2>
+        <div class="white-section">
+            <h2>Why Choose Our Premium Ceramic Worry Stones?</h2>
             <ul class="features-list">
-                <li>Multiple ceramic worry stones with unique positive affirmations</li>
-                <li>Each stone features inspirational messages like "Breathe," "Peace," "Calm," and more</li>
-                <li>Perfect variety to match different moods and needs</li>
-                <li>Beautifully packaged—ready for gifting or personal use</li>
-                <li>Portable size fits in pocket, purse, or desk drawer</li>
+                <li><strong>PREMIUM CERAMIC WORRY STONES</strong> - Made from high-quality ceramic, these mini worry stones are non-toxic, eco-friendly, and safe for all ages. Each piece is glazed and polished to provide a smooth and shiny surface, ensuring durability and longevity with meticulous craftsmanship.</li>
+                <li><strong>EXQUISITE GIFT PACKAGING</strong> - Handcrafted worry stones inspired by mischievous cats with positive encouraging words. Perfect for gifting to family, friends, children, or colleagues who need emotional support.</li>
+                <li><strong>EASY TO USE</strong> - Simply hold the ceramic worry stone's indentation against your thumb, place your fingers over the top, and rub between thumb and fingers. The smooth surface creates a pleasant sensation that helps calm you by distracting from stress.</li>
+                <li><strong>POCKET STONES & KEYCHAIN</strong> - Easy to carry in your pocket, purse, or wallet. Attach to keys for convenient access. The positive words are warm and help you relax and feel happy when you see them after a hard day's work.</li>
+                <li><strong>HANDMADE UNIQUENESS</strong> - Due to the handmade nature, variations in shape, color, and weight are to be expected. Each item is unique and reflects the natural charm of the handcrafted process.</li>
             </ul>
         </div>
 
-        <div class="testimonials">
-            <h2>What People Are Saying</h2>
-
-            <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "I keep one on my desk at work and use it during stressful calls. The smooth texture and positive words instantly calm me down. Best purchase I've made for my mental health!"
-                </p>
-                <p class="testimonial-author">— Sarah M.</p>
-            </div>
-
-            <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "I was skeptical at first, but these really work! I have one in my car, one at my bedside, and one in my purse. The affirmations are beautiful and the quality is excellent."
-                </p>
-                <p class="testimonial-author">— James T.</p>
-            </div>
-
-            <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Bought these as gifts for my team during a high-stress project. Everyone loved them! Such a thoughtful way to promote wellness at work."
-                </p>
-                <p class="testimonial-author">— Maria L.</p>
+        <div class="white-section">
+            <h2>Perfect For Everyone Who Needs Emotional Support</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧘‍♀️</div>
+                    <div class="benefit-title">Adults with Anxiety</div>
+                    <div class="benefit-text">Replace unconscious repetitive behaviors. Lower anxiety levels during work or meetings.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <div class="benefit-title">Students</div>
+                    <div class="benefit-text">Avoid picking fingers, control nervous habits, and calm down during exams and study sessions.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👶</div>
+                    <div class="benefit-title">Autism & ADHD Kids</div>
+                    <div class="benefit-text">Benefit from sensory-based play. Meet sensory needs through quiet, tactile fidget toys.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <div class="benefit-title">Working Professionals</div>
+                    <div class="benefit-text">Silent and discreet fidget sensory stones for use during meetings and work hours.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <div class="benefit-title">Perfect Gift Idea</div>
+                    <div class="benefit-text">Send these positive pocket stones to family, friends, or children as a thoughtful gift.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <div class="benefit-title">Special Needs Support</div>
+                    <div class="benefit-text">Provides hours of endless entertainment for children with special needs and sensory requirements.</div>
+                </div>
             </div>
         </div>
 
-        <div class="guarantee-box">
-            <h3>🛡️ 100% Satisfaction Guaranteed</h3>
-            <p style="font-size: 1.15rem;">
-                Try your worry stones risk-free. If you're not completely satisfied, Amazon's hassle-free return policy has you covered.
+        <div class="white-section">
+            <h2>Product Features in Detail</h2>
+            <div class="product-description-images">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/8a028fdd-6b2a-4628-88e0-62ad2b6a1810.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Product Note" class="desc-image">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/875d318f-776c-459f-80bf-885a0da4d834.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Keychain Feature" class="desc-image">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/028ad3b2-6645-4471-ad89-40054fa283d6.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Benefits" class="desc-image">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/b9d711ce-ef53-4918-81b3-18d419d3f059.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Handmade Quality" class="desc-image">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/135ff919-2cf9-4ed2-adb1-e6490046b311.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Cute Design" class="desc-image">
+            </div>
+        </div>
+
+        <div class="white-section">
+            <h2>How It Helps You Feel Better</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8;">
+                <strong>Repeatedly rubbing these textured fidget toys</strong> through fingers up and down replaces unconscious repetitive behaviors. Roll these quiet fidget sensory stones in one hand to help adults with anxiety lower anxiety levels and pressure in the brain during work or meetings.
+            </p>
+            <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                <strong>Perfect tactile fidget sensory set for students</strong> to avoid picking fingers, control nervous habits, and calm down. Autism children with special needs could also benefit from this sensory-based play. Meet all your older kids' sensory needs through rubbing and touching these silent sensory stone stress toys.
             </p>
         </div>
 
-        <div class="cta-section">
-            <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">Start Your Journey to Calm Today</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                Join thousands who have discovered the simple power of worry stones
+        <div class="white-section">
+            <h2>Calming Benefits You'll Experience:</h2>
+            <ul class="features-list" style="margin-top: 1rem;">
+                <li><strong>Calming Energy</strong> - Feel immediate relaxation from the smooth ceramic texture</li>
+                <li><strong>Emotional Grounding and Stability</strong> - Stay centered during stressful moments</li>
+                <li><strong>Comfort and Soothing</strong> - Experience tactile comfort that soothes your nervous system</li>
+                <li><strong>Mindfulness and Present-Moment Awareness</strong> - Practice being present without formal meditation</li>
+                <li><strong>Energy Clearing and Rebalancing</strong> - Reset your emotional state naturally</li>
+            </ul>
+        </div>
+
+        <div class="guarantee-box" style="background: white;">
+            <h3>🛡️ Amazon's 100% Satisfaction Guarantee</h3>
+            <p style="font-size: 1.15rem; color: #333;">
+                Try your worry stones risk-free. Amazon's hassle-free return policy ensures you're completely satisfied with your purchase.
+            </p>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0; background: rgba(255, 255, 255, 0.95); padding: 3rem; border-radius: 20px; color: #333;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: #667eea;">Start Your Journey to Calm Today</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem; color: #555;">
+                Join thousands who have discovered the simple power of ceramic worry stones with positive messages
             </p>
 
-            <div class="price-section">
-                <div class="price-subtext">Premium Quality at an Affordable Price</div>
-                <div class="price">Check Amazon</div>
-                <div class="price-subtext">Fast & Free Shipping Available</div>
+            <div class="price-section" style="max-width: 500px; margin: 2rem auto;">
+                <div class="price-label">Premium Quality at an Affordable Price</div>
+                <div class="price" style="font-size: 2rem;">Available on Amazon</div>
+                <div style="font-size: 1rem; margin-top: 0.5rem;">Fast Shipping • Easy Returns • Secure Checkout</div>
             </div>
 
             <a href="https://www.amazon.com/TIWIWTB-Ceramic-Positive-Emotional-Support/dp/B0FHVJ7VW1?ref_=ast_sto_dp&th=1"
@@ -346,55 +416,23 @@
                 Get Your Worry Stones Now →
             </a>
 
-            <p class="urgency-text">
-                ⚡ Limited stock available - Order now to secure yours!
+            <p class="urgency-text" style="color: #667eea;">
+                ⚡ Limited Stock Available - Order Now to Secure Yours!
             </p>
-        </div>
 
-        <div class="product-showcase" style="margin-top: 3rem;">
-            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">Why Choose Ceramic Worry Stones?</h2>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Beautiful Design</h3>
-                    <p>Elegant ceramic material with uplifting affirmations</p>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💪</div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Durable Quality</h3>
-                    <p>Premium ceramic that lasts for years of daily use</p>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Perfect Gift</h3>
-                    <p>Share calm and positivity with friends and family</p>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Positive Energy</h3>
-                    <p>Inspirational messages to lift your spirits daily</p>
-                </div>
+            <div style="margin-top: 2rem; font-size: 1rem; color: #666; line-height: 1.8;">
+                ✓ Secure checkout through Amazon<br>
+                ✓ Prime shipping available<br>
+                ✓ Easy returns if not satisfied<br>
+                ✓ Trusted by thousands of satisfied customers
             </div>
         </div>
-
-        <div style="text-align: center; margin: 4rem 0 2rem 0; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 20px;">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Don't Wait to Feel Better</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                Every moment you wait is another moment of unnecessary stress. Your journey to calm starts with a single click.
-            </p>
-            <a href="https://www.amazon.com/TIWIWTB-Ceramic-Positive-Emotional-Support/dp/B0FHVJ7VW1?ref_=ast_sto_dp&th=1"
-               class="cta-button"
-               target="_blank"
-               rel="noopener noreferrer">
-                Order Your Worry Stones Now →
-            </a>
-            <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.8;">
-                ✓ Secure checkout through Amazon<br>
-                ✓ Fast shipping options available<br>
-                ✓ Easy returns if not satisfied
-            </p>
-        </div>
     </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
 </body>
 </html>
