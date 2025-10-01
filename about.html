@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CalmMJ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        .section {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #4facfe;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+        }
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About CalmMJ</h1>
+        <div class="content">
+            <div class="section">
+                <h2>Our Mission</h2>
+                <p>At CalmMJ, we believe in the transformative power of mindfulness and meditation. Our mission is to make mental wellness accessible to everyone through innovative digital solutions.</p>
+                <p>Founded in 2024, we've helped thousands find their path to inner peace and emotional balance.</p>
+            </div>
+            <div class="section">
+                <h2>Our Approach</h2>
+                <p>We combine ancient wisdom with modern technology to create unique experiences that resonate with today's lifestyle.</p>
+                <p>Our programs are designed by certified meditation instructors and wellness experts.</p>
+            </div>
+            <div class="section">
+                <h2>Our Values</h2>
+                <p>• Compassion: We lead with empathy and understanding</p>
+                <p>• Accessibility: Wellness should be available to all</p>
+                <p>• Innovation: We continuously evolve our offerings</p>
+            </div>
+            <div class="section">
+                <h2>Join Our Community</h2>
+                <p>Become part of a growing community of mindful individuals. Share experiences, learn from others, and grow together on this journey.</p>
+                <p>Over 50,000 active members worldwide!</p>
+            </div>
+        </div>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
