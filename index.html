@@ -54,6 +54,21 @@
             color: #667eea;
             transform: translateY(-2px);
         }
+        .featured-link {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333 !important;
+            font-weight: bold;
+            border: 2px solid #ffd700 !important;
+            animation: pulse 2s infinite;
+        }
+        .featured-link:hover {
+            background: white !important;
+            color: #667eea !important;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -75,6 +90,7 @@
         <h1>Welcome to CalmMJ</h1>
         <p>Find your inner peace through our mindful journey. Explore meditation techniques, breathing exercises, and wellness tips to enhance your daily life.</p>
         <div class="nav-links">
+            <a href="worry-stone-step1.html" class="featured-link">Worry Stones</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>

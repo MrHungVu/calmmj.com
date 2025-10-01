@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ancient Secret to Instant Calm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-in;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        .content-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            animation: slideUp 1s ease-out 0.3s both;
+        }
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+        }
+        .content-section p {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .benefit-text {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 237, 78, 0.2) 100%);
+            border-left: 4px solid #ffd700;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+        .highlight-box p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        .how-it-works {
+            margin: 3rem 0;
+        }
+        .step {
+            display: flex;
+            align-items: start;
+            margin: 1.5rem 0;
+            gap: 1.5rem;
+        }
+        .step-number {
+            background: #ffd700;
+            color: #333;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .step-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2rem auto;
+            display: block;
+            width: fit-content;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .content-section {
+                padding: 1.5rem;
+            }
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Introducing: The Ancient Worry Stone</h1>
+            <p class="subtitle">A 3,000-year-old wellness tool that fits in your pocket and brings instant calm</p>
+        </header>
+
+        <div class="content-section">
+            <h2>What is a Worry Stone?</h2>
+            <p>
+                For thousands of years, cultures around the world have used smooth stones as a simple yet powerful tool for managing stress and anxiety. The practice is beautifully simple: by rubbing your thumb over the stone's smooth surface, you activate ancient pressure points while creating a meditative, grounding ritual.
+            </p>
+            <p style="margin-top: 1rem;">
+                This tactile experience interrupts anxious thought patterns, brings your awareness to the present moment, and provides immediate physical comfort—all without medication, apps, or complicated techniques.
+            </p>
+        </div>
+
+        <div class="highlight-box">
+            <p>
+                "The repetitive motion of rubbing a worry stone activates the parasympathetic nervous system, which naturally reduces stress hormones and promotes feelings of calm and safety."
+            </p>
+            <p style="text-align: right; margin-top: 1rem; font-size: 1rem;">
+                — Wellness Research Studies
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Why Worry Stones Work</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧘</div>
+                    <div class="benefit-title">Grounding Effect</div>
+                    <div class="benefit-text">Brings your mind back to the present moment instantly</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤲</div>
+                    <div class="benefit-title">Acupressure Benefits</div>
+                    <div class="benefit-text">Stimulates calming pressure points in your hand</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <div class="benefit-title">Repetitive Motion</div>
+                    <div class="benefit-text">Creates a soothing, meditative rhythm</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <div class="benefit-title">Redirects Focus</div>
+                    <div class="benefit-text">Interrupts anxious thought patterns naturally</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <div class="benefit-title">Portable Peace</div>
+                    <div class="benefit-text">Fits in your pocket—use anywhere, anytime</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <div class="benefit-title">Natural Solution</div>
+                    <div class="benefit-text">No side effects, no prescriptions needed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section how-it-works">
+            <h2>How to Use Your Worry Stone</h2>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Hold It in Your Hand</h3>
+                    <p>Place the worry stone between your thumb and fingers, feeling its smooth, comfortable weight.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Rub Gently</h3>
+                    <p>Move your thumb in slow, circular motions over the stone's smooth surface. Feel the texture and temperature.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Breathe & Release</h3>
+                    <p>Take slow, deep breaths as you continue the motion. Feel your worries fade with each stroke.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Repeat Anytime</h3>
+                    <p>Use your worry stone whenever stress arises—at work, before bed, during meetings, or anytime you need calm.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Perfect For:</h2>
+            <ul style="list-style: none; font-size: 1.15rem; line-height: 2;">
+                <li>✓ Busy professionals dealing with work stress</li>
+                <li>✓ Anyone experiencing anxiety or racing thoughts</li>
+                <li>✓ People who struggle with meditation or mindfulness</li>
+                <li>✓ Those seeking a natural, portable stress relief tool</li>
+                <li>✓ Anyone who wants a tangible reminder to stay present</li>
+                <li>✓ Students dealing with exam pressure</li>
+                <li>✓ Parents juggling multiple responsibilities</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                <strong>Ready to experience the calming power of worry stones for yourself?</strong>
+            </p>
+            <a href="worry-stone-step3.html" class="cta-button">
+                See The Perfect Worry Stone →
+            </a>
+        </div>
+    </div>
+</body>
+</html>

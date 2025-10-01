@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeling Overwhelmed by Stress & Anxiety?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-in;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        .problems-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            animation: slideUp 1s ease-out 0.3s both;
+        }
+        .problem-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        .problem-list li {
+            padding: 1rem 0;
+            font-size: 1.15rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: start;
+        }
+        .problem-list li:before {
+            content: "✓";
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .stat-text {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2rem auto;
+            display: block;
+            width: fit-content;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .problems-section {
+                padding: 1.5rem;
+            }
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Do You Feel Constantly Overwhelmed by Stress & Anxiety?</h1>
+            <p class="subtitle">You're not alone. Millions struggle with daily stress that affects their health, relationships, and happiness.</p>
+        </header>
+
+        <div class="problems-section">
+            <h2 style="margin-bottom: 1.5rem; font-size: 2rem;">Does This Sound Familiar?</h2>
+            <ul class="problem-list">
+                <li>Racing thoughts that won't stop, especially at night</li>
+                <li>Feeling physically tense, with tight shoulders and clenched jaw</li>
+                <li>Overwhelmed by work deadlines and daily responsibilities</li>
+                <li>Difficulty focusing on tasks that matter</li>
+                <li>Feeling emotionally drained by the end of the day</li>
+                <li>Struggling to find a moment of peace in your busy life</li>
+            </ul>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">77%</div>
+            <div class="stat-text">of people experience physical symptoms caused by stress</div>
+        </div>
+
+        <div class="problems-section">
+            <h2 style="margin-bottom: 1.5rem; font-size: 2rem;">The Hidden Cost of Chronic Stress</h2>
+            <p style="font-size: 1.15rem; margin-bottom: 1rem;">
+                Chronic stress doesn't just affect your mood—it impacts every aspect of your life:
+            </p>
+            <ul class="problem-list">
+                <li>Weakened immune system making you more susceptible to illness</li>
+                <li>Disrupted sleep patterns leading to exhaustion</li>
+                <li>Strained relationships with loved ones</li>
+                <li>Reduced productivity and creativity at work</li>
+                <li>Increased risk of serious health conditions</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                <strong>What if there was a simple, ancient solution that could help you find calm in moments of stress?</strong>
+            </p>
+            <a href="worry-stone-step2.html" class="cta-button">
+                Show Me The Solution →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
