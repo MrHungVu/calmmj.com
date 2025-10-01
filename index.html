@@ -54,6 +54,37 @@
             color: #667eea;
             transform: translateY(-2px);
         }
+        .featured-product {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            animation: slideUp 1s ease-out 1.5s both;
+        }
+        .featured-product h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .featured-product p {
+            margin-bottom: 1.5rem;
+        }
+        .featured-product a {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 1rem 2.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255,193,7,0.3);
+        }
+        .featured-product a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,193,7,0.5);
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -74,6 +105,13 @@
     <div class="container">
         <h1>Welcome to CalmMJ</h1>
         <p>Find your inner peace through our mindful journey. Explore meditation techniques, breathing exercises, and wellness tips to enhance your daily life.</p>
+
+        <div class="featured-product">
+            <h2>🪨 Discover the Power of Worry Stones</h2>
+            <p>Experience ancient wisdom for modern stress relief. Learn how a simple ceramic worry stone can help you find calm in your busy day.</p>
+            <a href="worry-stone-intro.html">Learn More →</a>
+        </div>
+
         <div class="nav-links">
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
